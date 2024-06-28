@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background: url('https://www.blogdelfotografo.com/wp-content/uploads/2021/12/Fondo_Negro_4.webp') no-repeat center/cover;
+}
+
+.contenedor {
+    width: 700px;
+    max-width: 600px;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    border: 5px solid #404040;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 25px;
+}
+
+button {
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    font-size: 22px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+#lista-tareas {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.tarea {
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #404040;
+    color: white;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tarea.completada {
+    text-decoration: line-through;
+    background-color: black;
+    border: none;
+}
+
+.tarea p {
+    max-width: 350px;
+}
+
+i {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.icono-completar {
+    color: rgb(0, 255, 0);
+}
+
+.icono-eliminar {
+    color: rgb(255, 255, 255);
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover {
+    background-color: rgba(255, 255, 255, 0.523);
+}
